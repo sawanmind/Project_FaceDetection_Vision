@@ -12,10 +12,12 @@ import AVFoundation
 
 class CameraController : NSObject  {
  
+    //MARK: Vision request
     private var request = [VNRequest]()
     private var faceDetectionRequest: VNRequest!
     private var previewLayer : PreviewLayer!
     private var controller: UIViewController?
+   
     //MARK: Camera session
     
     private var devicePosition: AVCaptureDevice.Position = .back
